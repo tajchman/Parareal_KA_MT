@@ -1,0 +1,9 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}/src",
+  "python.analysis.typeCheckingMode": "standard",
+  "C_Cpp.default.includePath": [
+    "${worksplaceFolder}/src/",
+    "${worksplaceFolder}/src/DEAL.II/include"
+  ],
+  "C_Cpp.default.compilerPath": "/usr/bin/g++"
+}
