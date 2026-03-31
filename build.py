@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-import os, subprocess, argparse, sys, shutil, requests, platform
+import os, subprocess, argparse, sys, shutil, platform
 from pathlib import Path
 
 
@@ -53,6 +53,8 @@ def build(a, opt):
   Gen = "Unix Makefiles"
   if p == 'Windows':
     Gen = "Ninja"
+  elif p == 'Darwin':
+    Gen = "Xcode"
     
   os.makedirs(a.buildDir, exist_ok=True)
   os.makedirs(a.testDir, exist_ok=True)
